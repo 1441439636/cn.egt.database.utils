@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.User" table="users" schema="webshop1">
+        <id name="uid">
+            <column name="userid" sql-type="varchar(32)"></column>
+        </id>
+        <property name="username">
+            <column name="username" sql-type="varchar(20)"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(20)"/>
+        </property>
+        <property name="name">
+            <column name="name" sql-type="varchar(20)"/>
+        </property>
+        <property name="email">
+            <column name="email" sql-type="varchar(30)"/>
+        </property>
+        <property name="telephone">
+            <column name="telephone" sql-type="varchar(20)"/>
+        </property>
+
+        <property name="birthday"  >
+            <column name="birthday" sql-type="varchar(10)"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="varchar(10)"/>
+        </property>
+        <property name="state">
+            <column name="state" sql-type="number(11)"/>
+        </property>
+        <property name="code">
+            <column name="code" sql-type="varchar(64)"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.Product" table="product" schema="webshop1">
+        <id name="pid">
+            <column name="pid" sql-type="varchar(32)"></column>
+        </id>
+        <property name="pname">
+            <column name="pname" sql-type="varchar(50)"/>
+        </property>
+        <property name="market_price">
+            <column name="market_price" sql-type="number(11,2)"/>
+        </property>
+        <property name="shop_price">
+            <column name="shop_price" sql-type="number(11,2)"/>
+        </property>
+        <property name="pimage">
+            <column name="pimage" sql-type="varchar(200)"/>
+        </property>
+        <property name="pdate">
+            <column name="pdate" sql-type="varchar(10)"/>
+        </property>
+
+        <property name="is_hot">
+            <column name="is_hot" sql-type="Number(11)"/>
+        </property>
+        <property name="pdesc">
+            <column name="pdesc" sql-type="varchar(255)"/>
+        </property>
+        <property name="pflag">
+            <column name="state" sql-type="number(11)"/>
+        </property>
+        <many-to-one name="category" class="entity.Category" column="CID"/>
+    </class>
+</hibernate-mapping>

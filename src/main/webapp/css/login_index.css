@@ -1,0 +1,97 @@
+    hr.hr15 {
+        height: 15px;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    #login{
+        margin: 100px auto 0 auto;
+        min-height: 420px;
+        max-width: 420px;
+        padding: 40px;
+        background-position: center top;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+
+        box-sizing: border-box;
+        border:2px solid white;
+        border-radius:25px;
+        overflow: hidden;
+
+    }
+
+    body,html{
+        height:100%;
+        overflow:hidden;
+    }
+    input[type=text]:focus,
+    input[type=file]:focus,
+    input[type=password]:focus,
+    input[type=email]:focus, select:focus {
+        border: 1px solid #27A9E3;
+
+    }
+
+    body{
+        background:url(../images/back_ground.jpg) no-repeat center;
+        background-size: cover;
+    }
+    hr.hr20 {
+        height: 20px;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    input[type=submit],
+    input[type=button]{
+        display: inline-block;
+        vertical-align: middle;
+        padding: 12px 24px;
+        margin: 0px;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        color: #ffffff;
+        background-color: #27A9E3;
+        border-radius: 3px;
+        border: none;
+        -webkit-appearance: none;
+        outline:none;
+        width:100%;
+    }
+    #title{
+        text-align: center;
+        font-size: 25px;
+          font-family: kaiti;
+        
+    }
+    *{
+        font: 13px/1.5 '微软雅黑', Verdana, Helvetica, Arial, sans-serif;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -box-sizing: border-box;
+        padding:0;
+        margin:0;
+        list-style:none;
+        box-sizing: border-box;
+    }
+    #buttom{
+        margin-top: 100px;
+        text-align: center;
+    }
+    #njcit{
+
+        font-family: kaiti;
+    }
+    #top{
+       margin-top: auto;
+       text-align: center;
+    }

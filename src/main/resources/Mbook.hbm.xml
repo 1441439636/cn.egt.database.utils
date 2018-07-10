@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.Mbook" table="MBOOK" schema="JAVAWEB1">
+        <id name="bId" column="B_ID" >
+            <generator class="increment"></generator>
+        </id>
+        <property name="bname">
+            <column name="BNAME" sql-type="char(40)" length="40" not-null="true"/>
+        </property>
+        <property name="bcontext">
+            <column name="BCONTEXT" sql-type="char(1000)" length="1000" not-null="true"/>
+        </property>
+        <many-to-one name="muser" class="entity.Muser" column="u_id"/>
+    </class>
+</hibernate-mapping>
